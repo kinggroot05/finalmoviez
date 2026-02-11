@@ -112,14 +112,15 @@ document.getElementById('loginBtn').addEventListener('click',()=>{
 
   localStorage.setItem('currentUser',user);
   status.textContent='Login success...';
-  setTimeout(()=>window.location.href='https://groupymovies.pages.dev/',600);
+  setTimeout(()=>window.location.href='mainpage.html',600);
 });
 
 // auto redirect if already logged in
 if(localStorage.getItem('currentUser')){
-  window.location.href='https://groupymovies.pages.dev/';
+  window.location.href='mainpage.html';
 }
 </script>
 
 </body>
+
 </html>
